@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>The Convergence of a Spectral Sequence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>The Convergence of a Spectral Sequence</h1>
+    <div id="cage">
+
+        <div id="instructions">
+            <p>See how the terms in a bi-graded spectral sequence converge as you flip between the pages, when it is
+                supported in the first quadrant (i.e. if p &lt; 0 or q &lt; 0, then E<sub>n</sub><sup>p,q</sup> = 0
+                for all n).</p>
+
+            <p>Use the left and right arrow keys to turn pages. Alternatively, you can click the buttons below.</p>
+
+            <p>A <b>darker, bolded</b> term has converged at the given page.</p>
+        </div>
+
+    </div>
+
+    <div id="navigation">
+        <input type="button" value="&lt;" onclick="decrement()">
+        &nbsp;
+        <span id="page"></span>
+        &nbsp;
+        <input type="button" value="&gt;" onclick="increment()">
+    </div>
+
+    <canvas id="spectral_sequence"></canvas>
+
+    <div id="settings">
+        x-axis bounds: <input type="text" id="min_p_input" size="2" value="0"> &le; p &le; <input type="text"
+            id="max_p_input" size="2" value="6">
+        &nbsp; &nbsp; &nbsp;
+        y-axis bounds: <input type="text" id="min_q_input" size="2" value="0"> &le; q &le; <input type="text"
+            id="max_q_input" size="2" value="4">
+        <br>
+        <input type="radio" name="grading" onclick="set_cohomological()" id="cohomological" checked>
+        <label for="cohomological">cohomological</label>
+        &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="grading" onclick="set_homological()" id="homological">
+        <label for="homological">homological</label>
+    </div>
+
+    <script src="spectral_sequence.js"></script>
+
+</body>
+
+</html>

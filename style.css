@@ -1,0 +1,35 @@
+body {
+    color: #333;
+    font-family: Georgia, Times, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin: 2em 0;
+}
+
+#cage {
+    width: 34em;
+    text-align: left;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+canvas {
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding: 10px;
+}
+
+#navigation {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+    padding: 5px;
+}
+
+#settings {
+    padding: 5px;
+}
